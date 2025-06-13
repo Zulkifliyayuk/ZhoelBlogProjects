@@ -59,7 +59,7 @@ export const MyBlogsListCardComplete: React.FC<MyBlogCardProps> = ({
   return (
     <div
       id={id.toString()}
-      className='flex w-full cursor-pointer flex-row items-start justify-start gap-6'
+      className='flex w-full cursor-pointer flex-row items-start justify-start gap-6 overflow-hidden'
       onClick={() => {
         dispatch(setIdBlog(id));
         navigate('/BlogDetails');
@@ -71,7 +71,7 @@ export const MyBlogsListCardComplete: React.FC<MyBlogCardProps> = ({
           className='h-[258px] min-w-[340px] overflow-hidden rounded-[6px] object-cover'
         />
       </div>
-      <div className='flex flex-col'>
+      <div className='flex-1 overflow-hidden'>
         <h3 className='text-md line-clamp-2 leading-7.5 font-bold text-neutral-900 md:text-xl md:leading-8.5'>
           {title}
         </h3>
