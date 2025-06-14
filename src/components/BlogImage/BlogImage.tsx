@@ -13,6 +13,7 @@ export const BlogImage: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> = ({
       {...props}
       src={finalSrc}
       alt='Blog Image'
+      style={{ touchAction: 'auto' }}
       onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         e.currentTarget.onerror = null;
         e.currentTarget.src = fallbackImg;

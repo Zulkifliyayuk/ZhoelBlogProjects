@@ -93,7 +93,7 @@ export const MyBlogsListCardComplete: React.FC<MyBlogCardProps> = ({
         />
 
         <div className='mt-4 flex flex-row items-center justify-items-start gap-3'>
-          <div className='font-regular flex items-center gap-[12px] text-xs leading-6 text-neutral-600 md:text-sm md:leading-7'>
+          <div className='font-regular flex items-center gap-[12px] text-xs leading-6 text-neutral-700'>
             <span>Created {formatted}</span>
             <div className='h-[16px] w-0.25 bg-neutral-300'></div>
             <span>Last updated {formatted}</span>

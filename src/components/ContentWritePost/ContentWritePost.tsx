@@ -237,7 +237,10 @@ export const ContentWritePost: React.FC = () => {
                   src={previewUrl}
                   alt='Background Image Blog'
                   className='h-auto object-cover pb-[12px]'
-                  style={{ width: adjustClamp(313, 529, 1440) }}
+                  style={{
+                    width: adjustClamp(313, 529, 1440),
+                    touchAction: 'auto',
+                  }}
                 />
 
                 <div className='flex flex-row gap-3'>
