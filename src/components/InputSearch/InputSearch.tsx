@@ -13,8 +13,11 @@ export const InputSearch: React.FC = () => {
   const inputSearchQuery = useAppSelector((state) => state.searchBlogs.query);
 
   useEffect(() => {
-    inputRef.current?.focus();
-  }, [inputSearchQuery]);
+    const shouldFocus = window.location.pathname === '/Search';
+    if (shouldFocus) {
+      inputRef.current?.focus();
+    }
+  }, []);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setQuerySearch(event.target.value));
