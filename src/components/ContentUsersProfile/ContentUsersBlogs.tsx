@@ -49,7 +49,7 @@ export const ContentUsersBlogs: React.FC<React.ComponentProps<'div'>> = ({
           currentData.map((blog, index) => (
             <div
               key={blog.id}
-              className={`${currentData.length - 1 !== index && 'border-b border-neutral-300 py-6'}`}
+              className={`py-6 ${currentData.length - 1 !== index && 'border-b border-neutral-300'}`}
               style={{ width: adjustClamp(361, 800, 1440) }}
             >
               <BlogsListCardComplete

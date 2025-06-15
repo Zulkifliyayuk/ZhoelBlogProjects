@@ -1,7 +1,7 @@
 import { useGetComments } from '@/services/hooks/useGetComments';
 import React from 'react';
 import { cn } from '@/lib/utils';
-import imageNull from '@/assets/imageNull.png';
+import imageNull from '@/assets/imageNull.gif';
 
 type ContentMyCommentProps = {
   idBlog: number;

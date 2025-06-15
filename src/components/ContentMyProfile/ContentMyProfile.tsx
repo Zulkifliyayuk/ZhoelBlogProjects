@@ -6,7 +6,7 @@ import { EditProfileShowCase } from '../EditProfileShowCase/EditProfileShowCase'
 import { cn } from '@/lib/utils';
 import { ContentMyPassword } from '../ContentMyPassword/ContentMyPassword';
 import { adjustClamp } from '@/layout/function/function';
-import imageNull from '@/assets/imageNull.png';
+import imageNull from '@/assets/imageNull.gif';
 import { Loading } from '../Loading/Loading';
 
 type TabActiveProps = {

@@ -1,4 +1,4 @@
-import imageNull from '@/assets/imageNull.png';
+import imageNull from '@/assets/imageNull.gif';
 import React from 'react';
 
 type AvatarImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {

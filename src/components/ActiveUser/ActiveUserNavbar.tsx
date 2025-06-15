@@ -7,6 +7,7 @@ import { clearToken } from '@/redux/slice/authSlice';
 
 import profileIcon from '@/assets/profileIcon.png';
 import logoutIcon from '@/assets/logoutIcon.png';
+import searchIcon from '@/assets/search.png';
 import { Loading } from '../Loading/Loading';
 import { AvatarImage } from '../AvatarImage/AvatarImage';
 
@@ -52,6 +53,17 @@ export const ActiveUserNavbar: React.FC<React.ComponentProps<'div'>> = ({
         {showDropdown && (
           <div className='absolute top-0 right-0 z-50 w-[182px] min-w-[182px] translate-y-[56px] rounded-[12px] border border-neutral-300 bg-[#FFFFFF] md:left-0 md:-translate-x-[24px]'>
             <div className='flex flex-col items-start justify-center'>
+              <div
+                className='font-regular hover:text-primary-300 flex flex-row items-center justify-start gap-[8px] px-4 py-2 text-sm leading-7 text-neutral-950 md:hidden'
+                onClick={() => navigate('/Search')}
+              >
+                <img
+                  src={searchIcon}
+                  alt='search icon'
+                  className='h-[20px] w-[20px]'
+                />
+                Search
+              </div>
               <div
                 className='font-regular hover:text-primary-300 flex flex-row items-center justify-start gap-[8px] px-4 py-2 text-sm leading-7 text-neutral-950'
                 onClick={() => navigate('/MyProfile')}

@@ -11,7 +11,7 @@ import { Button } from '../Button/Button';
 import { adjustClamp } from '@/layout/function/function';
 
 import XIcon from '@/assets/Xicon.png';
-import ImageNull from '@/assets/imageNull.png';
+import ImageNull from '@/assets/imageNull.gif';
 import IconCamera from '@/assets/IconCamera.png';
 import { Loading } from '../Loading/Loading';
 

@@ -28,13 +28,13 @@ export const ContentMyLikes: React.FC<ContentMyLikesProps> = ({
                 src={
                   datalike?.avatarUrl
                     ? `https://truthful-simplicity-production.up.railway.app${datalike.avatarUrl}`
-                    : './src/assets/imageNull.png'
+                    : './src/assets/imageNull.gif'
                 }
                 alt='avatar'
                 className='h-[48px] w-[48px] min-w-[48px] rounded-full object-cover'
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = './src/assets/imageNull.png';
+                  e.currentTarget.src = './src/assets/imageNull.gif';
                 }}
               />
             </div>

@@ -22,10 +22,9 @@ export const ShowAllComments: React.FC<ShowAllCommentsProps> = ({
   return ReactDOM.createPortal(
     <div className='fixed inset-0 z-50 flex items-center justify-center bg-[#0A0D12]/60'>
       <div
-        className='flex flex-col overflow-hidden rounded-2xl bg-[#FFFFFF] p-6'
+        className='mx-[24px] flex max-h-[88%] flex-col overflow-hidden rounded-2xl bg-[#FFFFFF] p-6'
         style={{
-          height: adjustClamp(658, 902, 1440),
-          width: adjustClamp(345, 613, 1440),
+          width: adjustClamp(393, 661, 1440),
         }}
       >
         <div className='flex-between'>
